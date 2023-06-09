@@ -11,7 +11,7 @@ const AppContainer = () => {
           background: "#fff",
         },
       }}
-    >ñlñlñlñlñlñlñlñlñlñl_____
+    >
       <TabNavigation />
     </NavigationContainer>
   );
