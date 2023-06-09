@@ -18,7 +18,12 @@ const Tabs: [name: Screens, iconName: any, component: any][] = [
 
 const TabNavigation = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+        tabBarLabelStyle: { display: "none" },
+      }}
+    >
       {Tabs.map(([name, iconName, component]) => (
         <Tab.Screen
           name={name}
