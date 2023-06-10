@@ -1,6 +1,7 @@
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { FunctionComponent } from "react";
+import { Color } from "../../utils/Colors";
 const Button: FunctionComponent<Props> = ({ title }) => {
   return (
     <TouchableOpacity style={styles.button}>
@@ -13,7 +14,7 @@ interface Props {
 }
 const styles = StyleSheet.create({
   button: {
-    backgroundColor: "black",
+    backgroundColor: Color.primary,
     width: "100%",
     height: 50,
     borderRadius: 8,
@@ -24,7 +25,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
   },
   text: {
-    color: "white",
+    color: Color.text,
     fontWeight: "500",
     fontSize: 15,
   },

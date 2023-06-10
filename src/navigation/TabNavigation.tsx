@@ -6,6 +6,7 @@ import ProfileScreen from "../screens/ProfileScreen";
 import ActivitiesScreen from "../screens/ActivitiesScreen";
 import ChatScreen from "../screens/ChatScreen";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { Color } from "../utils/Colors";
 
 const Tab = createBottomTabNavigator();
 
@@ -31,7 +32,11 @@ const TabNavigation = () => {
           component={component}
           options={{
             tabBarIcon: ({ size, color, focused }) => (
-              <MaterialCommunityIcons name={iconName} size={29} color="black" />
+              <MaterialCommunityIcons
+                name={iconName}
+                size={29}
+                color={Color.primary}
+              />
             ),
           }}
         />

@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View, FlatList, ScrollView } from "react-native";
 import React from "react";
-import Button from "../components/Button";
-import TitleViewAll from "../components/TitleViewAll";
-import Title from "../components/Title";
-import Card from "../components/Card";
+import Button from "../components/Global/Button";
+import TitleViewAll from "../components/Home/TitleViewAll";
+import Title from "../components/Global/Title";
+import Card from "../components/Home/Card";
 import useHomeViewModel from "../viewModels/useHomeController";
+import { Color } from "../utils/Colors";
 const HomeScreen = () => {
   const { card } = useHomeViewModel();
   return (
@@ -42,12 +43,12 @@ const styles = StyleSheet.create({
     marginTop: 60,
     marginBottom: 20,
     marginHorizontal: 16,
-    backgroundColor: "#fff",
+    backgroundColor: Color.background,
     gap: 10,
   },
 
   subtitle: {
-    color: "#B0B0B0",
+    color: Color.subtitle,
     fontSize: 17,
   },
   buttonContainer: {

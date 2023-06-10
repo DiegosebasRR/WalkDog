@@ -1,17 +1,21 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
-import Button from "./Button";
+import Button from "../Global/Button";
+import { Color } from "../../utils/Colors";
 const Card = () => {
   return (
     <View style={styles.container}>
-      <Image style={styles.image} source={require("../assets/paseador.png")} />
+      <Image
+        style={styles.image}
+        source={require("../../assets/paseador.png")}
+      />
       <View>
         <View>
           <Text style={styles.title}>Mason York</Text>
           <Text>
             <Image
               style={styles.icon}
-              source={require("../assets/location.png")}
+              source={require("../../assets/location.png")}
             />
             <Text style={styles.subtitle}>7 km from you</Text>
           </Text>
@@ -40,7 +44,7 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: 12,
-    color: "#A1A1A1",
+    color: Color.subtitle,
   },
   icon: {
     width: 16,

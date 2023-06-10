@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
 import { FunctionComponent } from "react";
+import { Color } from "../../utils/Colors";
 
 const TitleViewAll: FunctionComponent<Props> = ({ title }) => {
   return (
@@ -24,12 +25,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   title: {
-    color: "#2B2B2B",
+    color: Color.title,
     fontSize: 34,
     fontWeight: "bold",
   },
   subtitle: {
-    color: "#B0B0B0",
+    color: Color.subtitle,
     fontSize: 17,
   },
 });
