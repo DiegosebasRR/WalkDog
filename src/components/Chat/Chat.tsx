@@ -2,14 +2,12 @@ import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
 import { Color } from "../../utils/Colors";
 import StateChat from "./StateChat";
+import CircularPhoto from "../Global/CircularPhoto";
 
 const chat = () => {
   return (
     <View style={styles.container}>
-      <Image
-        style={styles.profileImage}
-        source={require("../../assets/profile.png")}
-      />
+      <CircularPhoto size={70} />
       <View>
         <Text style={styles.name}>Will Knowles</Text>
         <Text>
@@ -32,11 +30,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-  },
-  profileImage: {
-    width: 70,
-    height: 70,
-    borderRadius: 70,
   },
   name: {
     fontSize: 20,

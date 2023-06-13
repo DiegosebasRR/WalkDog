@@ -9,9 +9,9 @@ export default State;
 
 const styles = StyleSheet.create({
   container: {
-    height: 16,
-    width: 16,
-    borderRadius: 16,
+    height: 12,
+    width: 12,
+    borderRadius: 12,
     backgroundColor: "green",
   },
 });
