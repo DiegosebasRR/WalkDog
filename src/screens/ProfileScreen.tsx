@@ -1,10 +1,11 @@
-import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, Image } from "react-native";
 import React from "react";
 import { Color } from "../utils/Colors";
 import Title from "../components/Global/Title";
 import ButtonIcon from "../components/Global/ButtonIcon";
 import CircularPhoto from "../components/Global/CircularPhoto";
 import { Feather } from "@expo/vector-icons";
+import ButtonProfile from "../components/Profile/ButtonProfile";
 const ProfileScreen = () => {
   return (
     <View style={styles.container}>
@@ -17,6 +18,17 @@ const ProfileScreen = () => {
         <Title title="Cristian Downey " />
         <Feather name="edit" size={24} color="black" />
       </Text>
+      <Text>
+        <Image style={styles.icon} source={require("../assets/location.png")} />
+        <Text style={styles.subtitle}>Moscow, Russia</Text>
+      </Text>
+      <View style={styles.containerButtonProfile}>
+        <ButtonProfile />
+        <ButtonProfile />
+        <ButtonProfile />
+        <ButtonProfile />
+        <ButtonProfile />
+      </View>
     </View>
   );
 };
@@ -41,5 +53,17 @@ const styles = StyleSheet.create({
   },
   containerName: {
     textAlign: "center",
+  },
+  subtitle: {
+    fontSize: 17,
+    color: Color.subtitle,
+  },
+  icon: {
+    width: 22,
+    height: 22,
+  },
+  containerButtonProfile: {
+    width: "100%",
+    backgroundColor: Color.background2,
   },
 });
